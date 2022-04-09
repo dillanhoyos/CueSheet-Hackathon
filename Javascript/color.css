@@ -1,0 +1,10 @@
+div {
+  display: flex;
+  flex-direction: columnn;
+  align-items: cennter;
+}
+
+textarea {
+  margin-top: 15px;
+  width: 50%;
+}
