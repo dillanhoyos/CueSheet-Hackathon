@@ -1,0 +1,44 @@
+SESSION NAME:	Here newone
+SAMPLE RATE:	48000.000000
+BIT DEPTH:	24-bit
+SESSION START TIMECODE:	00:00:00:00.00
+TIMECODE FORMAT:	29.97 Frame
+# OF AUDIO TRACKS:	1
+# OF AUDIO CLIPS:	2
+# OF AUDIO FILES:	1
+
+
+O N L I N E  F I L E S  I N  S E S S I O N
+Filename              	Location
+Equus 1M1 - Horses.wav	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+
+
+O F F L I N E  F I L E S  I N  S E S S I O N
+Filename              	Location
+
+
+O N L I N E  C L I P S  I N  S E S S I O N
+CLIP NAME           	Source File
+Equus 1M1 - Horses.L	Equus 1M1 - Horses.wav	[1]
+Equus 1M1 - Horses.R	Equus 1M1 - Horses.wav	[2]
+
+
+P L U G - I N S  L I S T I N G
+MANUFACTURER            	PLUG-IN NAME            	VERSION         	FORMAT          	STEMS                   	NUMBER OF INSTANCES
+
+
+T R A C K  L I S T I N G
+TRACK NAME:	Equus 1M1 - Horses (Stereo)
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: 
+PLUG-INS: 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	TIMESTAMP         	STATE
+1       	1       	Equus 1M1 - Horses.L          	      0:07.338	      1:37.824	      1:30.485	        600:48.314	Unmuted
+
+
+2       	1       	Equus 1M1 - Horses.R          	      0:07.338	      1:37.824	      1:30.485	        600:48.314	Unmuted
+
+
+M A R K E R S  L I S T I N G
+#   	LOCATION     	TIME REFERENCE    	UNITS    	NAME                             	COMMENTS
