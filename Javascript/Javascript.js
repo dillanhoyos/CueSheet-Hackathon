@@ -47,10 +47,10 @@ input.addEventListener('change', () => {
             var clipBreakdown = clipRawList[c].split('\t').map(item => item.trim());
             if(clipBreakdown[0] == '1'){
               clipBreakdown = clipBreakdown.slice(3, 6);
+              var timeBreakdown = clipBreakdown[2].split(':');
+              var timeInSecs = (timeBreakdown[0] * 60) + timeBreakdown[1];
               clips.push({
-                'timeIn': clipBreakdown[0],
-                'timeOut': clipBreakdown[1],
-                'duration': clipBreakdown[2],
+                'duration': timeInSecs,
               });
             }
           }

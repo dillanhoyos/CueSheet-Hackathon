@@ -1,7 +1,7 @@
 div {
   display: flex;
-  flex-direction: columnn;
-  align-items: cennter;
+  flex-direction: column;
+  align-items: center;
 }
 
 textarea {
