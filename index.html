@@ -44,18 +44,17 @@
         </div>
     </div>
     
-    <button disabled id="createCueSheetButton" onclick="createCueSheet()">parse to cue sheet</button>
-    <textarea id="cueSheetOutput" cols="30" rows="20"></textarea>   
+    <button disabled id="createCueSheetButton" onclick="createCueSheet()">parse to cue sheet</button>  
     <form action="/signup" method="post" id="output">
         <h3>Complete the unfilled fields!</h3><br>
         <label for="avCategoryCode">category code</label>
-        <input type="text" id="avCategoryCode">
+        <input type="text" id="avCategoryCode" required>
         <label for="avWorkTitle">work title</label>
-        <input type="text" id="avWorkTitle">
+        <input type="text" id="avWorkTitle" required>
         <label for="avEpisodeTitle">episode title</label>
-        <input type="text" id="avEpisodeTitle">
+        <input type="text" id="avEpisodeTitle" >
         <label for="avTypeCode">type code</label>
-        <input type="text" id="avTypeCode">
+        <input type="text" id="avTypeCode" required>
         <label for="avWorkDuration">work duration</label>
         <input type="text" id="avWorkDuration">
         <label for="totalMusicDuration">music duration</label>
@@ -66,15 +65,9 @@
         <input type="text" id="episodeNumber">
         <label for="seasonNumber">season number</label>
         <input type="text" id="seasonNumber">
-        
-        <h4>alternative work titles</h4>
-        <button class="newBtn" type="button" id="addAlternativeWorkTitles" onclick="makeNewAlternativeWork()" aria-label="new alternative work title">
-            <span span class="newBtnIcon">+</span>
-        </button>
-        <div class="allAltWorkTitles"></div><br>
 
         <h4>work cues</h4><br>
-        <div class="allCues"></div><br>
+        <textarea id="cueSheetOutput" cols="30" rows="20"></textarea>
         
         <h4>cue ips</h4><br>
         <label for="avCues-cueIps-ipName">ip name</label>

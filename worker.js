@@ -1,50 +1,10 @@
 const edlFile = document.getElementById('edlFile');
 const audioFile = document.getElementById('audioFile');
 const cueSheetOutput = document.getElementById('cueSheetOutput');
+const outputForm = document.getElementById('output');
 const createCueSheetButton = document.getElementById('createCueSheetButton');
-const addAlternativeWorkTitles = document.getElementById('addAlternativeWorkTitles');
-const allAltWorkTitles = document.getElementById('allAltWorkTitles');
 const allCues = document.getElementById('allCues');
 
-function makeNewAlternativeWork(){
-  var newBtnIcon = document.createElement('span');
-  newBtnIcon.setAttribute('class', 'newBtnIcon');
-  newBtnIcon.value = '-';
-  var newAvButton = document.createElement('button');
-  newAvButton.setAttribute('class', 'subtract');
-  newAvButton.setAttribute('aria-label', 'remove alternative work title');
-  newAvButton.appendChild(newBtnIcon);
-  var newAvDiv = document.createElement('div');
-  newAvDiv.appendChild(newAvButton);
-  console.log(newAvDiv);
-  allAltWorkTitles.appendChild(newAvDiv);
-};
-/*
-        <div>
-            <button class="subtract" aria-label="remove alternative work title">
-            <span class="newBtnIcon">-</span>
-            </button>
-            <label for="avTitle-avWorkTitle">work title</label>
-        </div>
-        <input type="text" id="avTitle-avWorkTitle">
-        <label for="avTitles-langugageCode">language code</label>
-        <input type="text" id="avTitles-langugageCode">"
-
-        <label for="avCues-avWorkTitle">work title</label>
-        <input type="text" id="avCues-avWorkTitle">
-        <label for="avCues-iswc">iswc</label>
-        <input type="text" id="avCues-iswc">
-        <label for="avCues-instrumental">instrumental</label>
-        <input type="text" id="avCues-instrumental">
-        <label for="avCues-cueUsageCode">cue usage code</label>
-        <input type="text" id="avCues-cueUsageCode">
-        <label for="avCues-duration">duration</label>
-        <input type="text" id="avCues-duration">
-        <label for="avCues-sequenceNumber">sequence number</label>
-        <input type="text" id="avCues-sequenceNumber">
-        <label for="avCues-numberOfUses">number of uses</label>
-        <input type="text" id="avCues-numberOfUses"></input>
-*/
 var audioFilesJson = [];
 var edlJson = [];
 
@@ -52,7 +12,7 @@ function disableCueSheetButton(){
   if (edlFile.files.length != 0 && audioFile.files.length != 0) createCueSheetButton.removeAttribute('disabled');
   else{
     createCueSheetButton.disabled = true;
-    cueSheetOutput.style.display = "none";
+    outputForm.style.display = "none";
   }
 }
 
@@ -187,7 +147,7 @@ function createCueSheet(){
     mergeEdlAndAudioJson();
     cueSheetOutput.value = JSON.stringify(audioFilesJson);
     cueSheetOutput.style.borderColor = "green";
-    cueSheetOutput.style.display = "block";
+    outputForm.style.display = "block";
   }catch(e){
     alert('Error: ' + e);
   }
