@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Awesome Team</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"
+        integrity="sha512-YsR46MmyChktsyMMou+Bs74oCa/CDdwft7rJ5wlnmDzMj1mzqncsfJamEEf99Nk7IB0JpTMo5hS8rxB49FUktQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Awesome Team</h1>
+    </header>
+    <div class="drop-area-row">
+        <div class="drop-area">
+            <h3 class="drop-area-title">Pro Tools EDL File</h3>
+            <form class="my-form">
+                <p>Upload an EDL export from your Pro Tools project.</p>
+                <input type="file" id="edlFile" accept=".txt">
+            </form>
+        </div>
+        <div class="drop-area">
+            <h3 class="drop-area-title">Master Audio Files</h3>
+            <form class="my-form">
+                <p>Upload the audio files you would like to create a cue sheet for.</p>
+                <input type="file" id="audioFile" multiple accept=".mp3, .wav, .m4a">
+            </form>
+        </div>
+    </div>
+    
+    <button disabled id="createCueSheetButton" onclick="createCueSheet()">create cue sheet</button>
+
+    <h3>Generated Cue Sheet</h3>
+    <textarea id="cueSheetOutput" cols="30" rows="20"></textarea>
+</body>
+
+<script src="worker.js"></script>
+</html>
