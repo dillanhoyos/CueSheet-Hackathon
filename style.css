@@ -14,7 +14,7 @@
   --fs-h3: 1rem;
   --fs-body: 1rem;
 
-  --bs: 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+  --bs: 5px 10px var(--clr-dark);
 
   --fs: 0.4em 0.4em 0.8em var(--clr-light),
     0.2em 0.2em 0.8em var(--clr-light);
@@ -43,7 +43,7 @@ header{
   position: fixed;
   top: 0;
   left: 0;
-  box-shadow: 0.125em 0.125em 0.25em var(--clr-dark);
+  box-shadow: 0.1px 0.1px 1px gray;
   background-color: whitesmoke;
   z-index: 10000;
 }
@@ -125,6 +125,15 @@ p {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+.nav-toggle{
+  align-self: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: var(--ff-primary);
+}
 
 .button:hover {
   background: #ddd;
@@ -139,11 +148,12 @@ p {
 .footer {
   width: 100%;
   margin-top: 100px;
-  display: fixed;
+  display:fixed;
   background: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
   font-size: var(--fs-h3);
+  padding-bottom: 30px;
 }
 
 .footer a {

@@ -18,8 +18,8 @@
             <img class="branding__logo" src="cool.png">
             <h2 class="branding__title">Awesome Team</h2>
         </div>
-        <button class="nav-toggle" aria-label="" toggle navigation>
-            <span class="hamburger"></span>
+        <button class="nav-toggle" aria-label="" onclick="alert('Please input your EDL file and audio files that you would like to create a cue sheet out of.')">
+            <span class="hamburger">i</span>
             <div class="nav-close" aria-label="close navigation"></div>
         </button>
         <nav class="nav">
@@ -46,16 +46,18 @@
     
     <button disabled id="createCueSheetButton" onclick="createCueSheet()">create cue sheet</button>
 
-    <textarea id="cueSheetOutput" cols="30" rows="20"></textarea>
+    <div id="output">
+        <textarea id="cueSheetOutput" cols="30" rows="20"></textarea>
+    </div>
 </body>
 
 <script src="worker.js"></script>
 <footer class="footer">
     <h3 class="footer__title">Members</h3>
     <p class="footer__link">Mark Sherriff</p>
-    <p class="footer__link">Dillion </p>
-    <p class="footer__link">Leandro </p>
-    <p class="footer__link">Steve </p>
-    <p class="footer__link">Ashley</p>
+    <p class="footer__link">Dillan</p>
+    <p class="footer__link">Leandro</p>
+    <p class="footer__link">Steven</p>
+    <p class="footer__link">Ashley Tajarrod</p>
 </footer>
 </html>
