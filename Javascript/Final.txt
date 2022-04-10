@@ -1,0 +1,100 @@
+SESSION NAME:	Here newone
+SAMPLE RATE:	48000.000000
+BIT DEPTH:	24-bit
+SESSION START TIMECODE:	00:00:00:00
+TIMECODE FORMAT:	59.94 Frame
+# OF AUDIO TRACKS:	2
+# OF AUDIO CLIPS:	32
+# OF AUDIO FILES:	13
+
+
+O N L I N E  F I L E S  I N  S E S S I O N
+Filename                          	Location
+Equus 1M1 - Horses.wav            	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+Arcane_Demo.L.wav                 	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+Arcane_Demo.R.wav                 	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+04 Feeling Alright 1.L.wav        	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+04 Feeling Alright 1.R.wav        	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+04 Feeling Alright 1.1.L.wav      	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+04 Feeling Alright 1.1.R.wav      	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+04 Feeling Alright 1.2.L.wav      	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+04 Feeling Alright 1.2.R.wav      	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+04 Feeling Alright 1.2.1.L.wav    	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+04 Feeling Alright 1.2.1.R.wav    	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+Symphony No.6 (1st movement).L.wav	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+Symphony No.6 (1st movement).R.wav	Macintosh HD:Users:dillannhoyos:Desktop:Here newone:Audio Files:
+
+
+O F F L I N E  F I L E S  I N  S E S S I O N
+Filename                          	Location
+
+
+O N L I N E  C L I P S  I N  S E S S I O N
+CLIP NAME                        	Source File
+04 Feeling Alright 1-01.L        	04 Feeling Alright 1.2.L.wav
+04 Feeling Alright 1-01.R        	04 Feeling Alright 1.2.R.wav
+04 Feeling Alright 1.1-01.L      	04 Feeling Alright 1.1.L.wav
+04 Feeling Alright 1.1-01.R      	04 Feeling Alright 1.1.R.wav
+04 Feeling Alright 1.1.L         	04 Feeling Alright 1.1.L.wav
+04 Feeling Alright 1.1.R         	04 Feeling Alright 1.1.R.wav
+04 Feeling Alright 1.2.1.L       	04 Feeling Alright 1.2.1.L.wav
+04 Feeling Alright 1.2.1.R       	04 Feeling Alright 1.2.1.R.wav
+04 Feeling Alright 1.L           	04 Feeling Alright 1.L.wav
+04 Feeling Alright 1.R           	04 Feeling Alright 1.R.wav
+Arcane_Demo.L                    	Arcane_Demo.L.wav
+Arcane_Demo.R                    	Arcane_Demo.R.wav
+Cue#1-musicbllab.L               	Equus 1M1 - Horses.wav	[1]
+Cue#1-musicbllab.R               	Equus 1M1 - Horses.wav	[2]
+Equus 1M1 - Horses-02.L          	Equus 1M1 - Horses.wav	[1]
+Equus 1M1 - Horses-02.R          	Equus 1M1 - Horses.wav	[2]
+Equus 1M1 - Horses.L             	Equus 1M1 - Horses.wav	[1]
+Equus 1M1 - Horses.R             	Equus 1M1 - Horses.wav	[2]
+Feeling Alright-01.L             	04 Feeling Alright 1.L.wav
+Feeling Alright-01.R             	04 Feeling Alright 1.R.wav
+Feeling Alright-02.L             	04 Feeling Alright 1.L.wav
+Feeling Alright-02.R             	04 Feeling Alright 1.R.wav
+Feeling Alright.L                	04 Feeling Alright 1.L.wav
+Feeling Alright.R                	04 Feeling Alright 1.R.wav
+Symphony No.6 (1st movement)-02.L	Symphony No.6 (1st movement).L.wav
+Symphony No.6 (1st movement)-02.R	Symphony No.6 (1st movement).R.wav
+Symphony No.6 (1st movement)-03.L	Symphony No.6 (1st movement).L.wav
+Symphony No.6 (1st movement)-03.R	Symphony No.6 (1st movement).R.wav
+Symphony No.6 (1st movement)-04.L	Symphony No.6 (1st movement).L.wav
+Symphony No.6 (1st movement)-04.R	Symphony No.6 (1st movement).R.wav
+Symphony No.6 (1st movement).L   	Symphony No.6 (1st movement).L.wav
+Symphony No.6 (1st movement).R   	Symphony No.6 (1st movement).R.wav
+
+
+P L U G - I N S  L I S T I N G
+MANUFACTURER            	PLUG-IN NAME            	VERSION         	FORMAT          	STEMS                   	NUMBER OF INSTANCES
+
+
+T R A C K  L I S T I N G
+TRACK NAME:	Equus 1M1 - Horses (Stereo)
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: 
+PLUG-INS: 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	Feeling Alright.L             	          0:00	          0:09	          0:09	Unmuted
+
+
+2       	1       	Feeling Alright.R             	          0:00	          0:09	          0:09	Unmuted
+
+
+TRACK NAME:	Audio 1 (Stereo)
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: 
+PLUG-INS: 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	STATE
+1       	1       	Feeling Alright-01.L          	          0:10	          0:27	          0:16	Unmuted
+
+
+2       	1       	Feeling Alright-01.R          	          0:10	          0:27	          0:16	Unmuted
+
+
+M A R K E R S  L I S T I N G
+#   	LOCATION     	TIME REFERENCE    	UNITS    	NAME                             	COMMENTS
+1   	0:07         	352256            	Samples  	cue number1                      	Dillan
+2   	0:58         	2826240           	Samples  	cue number 2                     	this my part

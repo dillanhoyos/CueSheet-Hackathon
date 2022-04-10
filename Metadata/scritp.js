@@ -8,7 +8,7 @@
 
         jsmediatags.read (file, {
             onSuccess: function(tag){
-                    
+                    console.log(tag);
                 var json = JSON.stringify(tag);
                    console.log(json);
                 const data = tag.tags.picture.data;
