@@ -1,0 +1,188 @@
+{
+  'path': '/media/diagnose',
+  'status': 'Success',
+  'progress': 100,
+  'api_version': 'b1.0',
+  'result': {
+    'media_info': {
+      'container': {
+        'kind': 'wav',
+        'duration': 90.485,
+        'bitrate': 2316367,
+        'size': 26199554
+      },
+      'audio': {
+        'codec': 'pcm',
+        'bit_depth': 24,
+        'channels': 2,
+        'sample_rate': 48000,
+        'duration': 90.485,
+        'bitrate': 2304000
+      }
+    },
+    'audio': {
+      'quality_score': {
+        'average': 2.8,
+        'distribution': [
+          {
+            'lower_bound': 0,
+            'upper_bound': 1,
+            'duration': 4.5,
+            'percentage': 5
+          },
+          {
+            'lower_bound': 1,
+            'upper_bound': 2,
+            'duration': 25.5,
+            'percentage': 28.5
+          },
+          {
+            'lower_bound': 2,
+            'upper_bound': 3,
+            'duration': 19,
+            'percentage': 21.2
+          },
+          {
+            'lower_bound': 3,
+            'upper_bound': 4,
+            'duration': 19.5,
+            'percentage': 21.8
+          },
+          {
+            'lower_bound': 4,
+            'upper_bound': 5,
+            'duration': 14,
+            'percentage': 15.6
+          },
+          {
+            'lower_bound': 5,
+            'upper_bound': 6,
+            'duration': 3.5,
+            'percentage': 3.9
+          },
+          {
+            'lower_bound': 6,
+            'upper_bound': 7,
+            'duration': 3,
+            'percentage': 3.4
+          },
+          {
+            'lower_bound': 7,
+            'upper_bound': 8,
+            'duration': 0.5,
+            'percentage': 0.6
+          },
+          {
+            'lower_bound': 8,
+            'upper_bound': 9,
+            'duration': 0,
+            'percentage': 0
+          },
+          {
+            'lower_bound': 9,
+            'upper_bound': 10,
+            'duration': 0,
+            'percentage': 0
+          }
+        ],
+        'worst_segment': {
+          'start': 62.5,
+          'end': 67.5,
+          'score': 1.4
+        }
+      },
+      'noise_score': {
+        'average': 1.4,
+        'distribution': [
+          {
+            'lower_bound': 0,
+            'upper_bound': 1,
+            'duration': 61.5,
+            'percentage': 68.7
+          },
+          {
+            'lower_bound': 1,
+            'upper_bound': 2,
+            'duration': 6.5,
+            'percentage': 7.3
+          },
+          {
+            'lower_bound': 2,
+            'upper_bound': 3,
+            'duration': 3.5,
+            'percentage': 3.9
+          },
+          {
+            'lower_bound': 3,
+            'upper_bound': 4,
+            'duration': 3.5,
+            'percentage': 3.9
+          },
+          {
+            'lower_bound': 4,
+            'upper_bound': 5,
+            'duration': 1,
+            'percentage': 1.1
+          },
+          {
+            'lower_bound': 5,
+            'upper_bound': 6,
+            'duration': 3.5,
+            'percentage': 3.9
+          },
+          {
+            'lower_bound': 6,
+            'upper_bound': 7,
+            'duration': 4,
+            'percentage': 4.5
+          },
+          {
+            'lower_bound': 7,
+            'upper_bound': 8,
+            'duration': 1.5,
+            'percentage': 1.7
+          },
+          {
+            'lower_bound': 8,
+            'upper_bound': 9,
+            'duration': 2,
+            'percentage': 2.2
+          },
+          {
+            'lower_bound': 9,
+            'upper_bound': 10,
+            'duration': 2.5,
+            'percentage': 2.8
+          }
+        ]
+      },
+      'clipping': {
+        'events': 0
+      },
+      'loudness': {
+        'measured': -15.42,
+        'range': 17.38,
+        'gating_mode': 'level',
+        'sample_peak': -0.5,
+        'true_peak': -0.48
+      },
+      'music': {
+        'percentage': 95.7
+      },
+      'silence': {
+        'percentage': 3,
+        'at_beginning': 2.69,
+        'at_end': 0,
+        'num_sections': 1,
+        'silent_channels': []
+      },
+      'speech': {
+        'percentage': 0,
+        'events': {
+          'plosive': 0,
+          'sibilance': 0
+        }
+      }
+    }
+  }
+}
