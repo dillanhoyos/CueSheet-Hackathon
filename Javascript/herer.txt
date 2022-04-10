@@ -33,12 +33,22 @@ COMMENTS:
 USER DELAY:	0 Samples
 STATE: 
 PLUG-INS: 
-CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME      	DURATION      	TIMESTAMP         	STATE
-1       	1       	Equus 1M1 - Horses.L          	      0:07.338	      1:37.824	      1:30.485	        600:48.314	Unmuted
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME            DURATION      	TIMESTAMP         	STATE
+1       	1       	Equus 1M1 - Horses.L          	      0:07.338	      1:37.824	      1:30.485	        600:48.314  Unmuted
 
 
-2       	1       	Equus 1M1 - Horses.R          	      0:07.338	      1:37.824	      1:30.485	        600:48.314	Unmuted
+2       	1       	Equus 1M1 - Horses.R          	      0:07.338	      1:37.824	      1:30.485	        600:48.314  Unmuted
 
+TRACK NAME:	Equus 222222 (Stereo)
+COMMENTS:	
+USER DELAY:	0 Samples
+STATE: 
+PLUG-INS: 
+CHANNEL 	EVENT   	CLIP NAME                     	START TIME    	END TIME            DURATION      	TIMESTAMP         	STATE
+1       	1       	Equus 1M1 - Horses.L          	      0:07.338	      1:37.824	      1:30.485	        600:48.314  Unmuted
+
+
+2       	1       	Equus 1M1 - Horses.R          	      0:07.338	      1:37.824	      1:30.485	        600:48.314  Unmuted
 
 M A R K E R S  L I S T I N G
 #   	LOCATION     	TIME REFERENCE    	UNITS    	NAME                             	COMMENTS
