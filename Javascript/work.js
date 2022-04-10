@@ -37,31 +37,42 @@ input.addEventListener('change', () => {
       for(var i = 0; i < trackStringIndicies.length-1; i++){
         trackStringList.push(hererString.substring(trackStringIndicies[i], trackStringIndicies[i+1]));
       }
-      var result = [];
+      var clips = [];
       for(var i = 0; i < trackStringList.length; i++){
         var clipRawList = trackStringList[i].split('\n');
         var clipStart = clipRawList.indexOf("CHANNEL \tEVENT   \tCLIP NAME                     \tSTART TIME    \tEND TIME            DURATION      \tTIMESTAMP         \tSTATE");
-        var clips = [];
         for (var c = clipStart + 1; c < clipRawList.length; c++){
           if(clipRawList[c] != ""){
             var clipBreakdown = clipRawList[c].split('\t').map(item => item.trim());
             if(clipBreakdown[0] == '1'){
+              clipName = clipBreakdown[2];
+              clipName = clipName.split('.L')[0];
               clipBreakdown = clipBreakdown.slice(3, 6);
               var timeBreakdown = clipBreakdown[2].split(':');
               var timeInSecs = (timeBreakdown[0] * 60) + timeBreakdown[1];
               clips.push({
-                'duration': timeInSecs,
+                'clipName' : clipName,
+                'numberOfUses' : 1,
+                'duration': parseInt(timeInSecs, 10)
               });
             }
           }
         }
         var trackName = trackStringList[i].split('\t');
         trackName = trackName[1].split('\n');
-        result.push({
-          "title": trackName[0], clips
-        });
       }
-      console.log(result);
+
+      var finalClips = [];
+      for(var i = 0; i < clips.length; i++){
+        var foundIndex = finalClips.map((o) => o.clipName).indexOf(clips[i].clipName);
+        if(foundIndex == -1){
+          finalClips.push(clips[i]);
+          continue;
+        }
+        finalClips[foundIndex]['numberOfUses']++;
+        finalClips[foundIndex]['duration'] += clips[i]['duration'];
+      }
+      console.log(finalClips);
     };
 
     reader.onerror= (e) => alert(e.target.error.name);
