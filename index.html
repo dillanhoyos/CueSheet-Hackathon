@@ -31,33 +31,88 @@
         <div class="drop-area">
             <h3 class="drop-area-title">Pro Tools EDL File</h3>
             <form class="my-form">
-                <p>Upload an EDL export from your Pro Tools project.</p>
+                <p>Upload an EDL export from Pro Tools.</p>
                 <input type="file" id="edlFile" accept=".txt">
             </form>
         </div>
         <div class="drop-area">
             <h3 class="drop-area-title">Master Audio Files</h3>
             <form class="my-form">
-                <p>Upload the audio files you would like to create a cue sheet for.</p>
+                <p>Upload all the master audio files.</p>
                 <input type="file" id="audioFile" multiple accept=".mp3, .wav, .m4a">
             </form>
         </div>
     </div>
     
-    <button disabled id="createCueSheetButton" onclick="createCueSheet()">create cue sheet</button>
+    <button disabled id="createCueSheetButton" onclick="createCueSheet()">parse to cue sheet</button>
+    <textarea id="cueSheetOutput" cols="30" rows="20"></textarea>   
+    <form action="/signup" method="post" id="output">
+        <h3>Complete the unfilled fields!</h3><br>
+        <label for="avCategoryCode">category code</label>
+        <input type="text" id="avCategoryCode">
+        <label for="avWorkTitle">work title</label>
+        <input type="text" id="avWorkTitle">
+        <label for="avEpisodeTitle">episode title</label>
+        <input type="text" id="avEpisodeTitle">
+        <label for="avTypeCode">type code</label>
+        <input type="text" id="avTypeCode">
+        <label for="avWorkDuration">work duration</label>
+        <input type="text" id="avWorkDuration">
+        <label for="totalMusicDuration">music duration</label>
+        <input type="text" id="totalMusicDuration">
+        <label for="productionYear">production year</label>
+        <input type="text" id="productionYear">
+        <label for="episodeNumber">episode number</label>
+        <input type="text" id="episodeNumber">
+        <label for="seasonNumber">season number</label>
+        <input type="text" id="seasonNumber">
+        
+        <h4>alternative work titles</h4>
+        <button class="newBtn" aria-label="new alternative work title" onclick="">
+            <span class="newBtnIcon">+</span>
+        </button>
+        <label for="avTitle-avWorkTitle">work title</label>
+        <input type="text" id="avTitle-avWorkTitle">
+        <label for="avTitles-langugageCode">language code</label>
+        <input type="text" id="avTitles-langugageCode">
 
-    <div id="output">
-        <textarea id="cueSheetOutput" cols="30" rows="20"></textarea>
-    </div>
+        <h4>work cues</h4><br>
+        <label for="avCues-vworkTitle">work title</label>
+        <input type="text" id="avCues-vworkTitle">
+        <label for="avCues-iswc">iswc</label>
+        <input type="text" id="avCues-iswc">
+        <label for="avCues-instrumental">instrumental</label>
+        <input type="text" id="avCues-instrumental">
+        <label for="avCues-cueUsageCode">cue usage code</label>
+        <input type="text" id="avCues-cueUsageCode">
+        <label for="avCues-duration">duration</label>
+        <input type="text" id="avCues-duration">
+        <label for="avCues-sequenceNumber">sequence number</label>
+        <input type="text" id="avCues-sequenceNumber">
+        <label for="avCues-numberOfUses">number of uses</label>
+        <input type="text" id="avCues-numberOfUses">
+        
+        <h4>cue ips</h4><br>
+        <label for="avCues-cueIps-ipName">ip name</label>
+        <input type="text" id="avCues-cueIps-ipName">
+        <label for="avCues-cueIps-lastName">last name</label>
+        <input type="text" id="avCues-cueIps-lastName">
+        <label for="avCues-cueIps-ipiNameNumber">ipi name number</label>
+        <input type="text" id="avCues-cueIps-ipiNameNumber">
+        <label for="avCues-cueIps-ipFunction">ip function</label>
+        <input type="text" id="avCues-cueIps-ipFunction">
+
+        <button disabled id="createCueSheetButton" onclick="createCueSheet()">Submit to Socan</button>
+    </form>
 </body>
 
 <script src="worker.js"></script>
 <footer class="footer">
     <h3 class="footer__title">Members</h3>
-    <p class="footer__link">Mark Sherriff</p>
+    <p class="footer__link">Mark</p>
     <p class="footer__link">Dillan</p>
     <p class="footer__link">Leandro</p>
     <p class="footer__link">Steven</p>
-    <p class="footer__link">Ashley Tajarrod</p>
+    <p class="footer__link">Ashley</p>
 </footer>
 </html>

@@ -33,13 +33,14 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 10em;
+  font-family: var(--ff-secondary);
 }
 
 header{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1em 2em;
+  padding: 0em 1em;
   position: fixed;
   top: 0;
   left: 0;
@@ -57,7 +58,7 @@ header{
 .branding__logo {
   max-width: 100px;
   padding-top: 1.2em;
-  margin-right: 0.6em;
+  margin-right: 1em;
   float: left;
 
 }
@@ -71,7 +72,7 @@ header{
 }
 
 #createCueSheetButton{
-  margin-top: 50px;
+  margin-top: 40px;
   width: 200px;
   border-radius: 30px;
   font-size: large;
@@ -85,13 +86,15 @@ textarea {
 }
 
 .drop-area {
+  display: fixed;
+  float: left;
   border: 2px dashed #ccc;
   border-radius: 20px;
   padding: 20px;
-
   margin-bottom: 20px;
+  margin-right: 30px;
   height: 150px;
-  font-family: sans-serif;
+  font-family: var(--ff-secondary);
 }
 
 .drop-area.highlight {
@@ -139,10 +142,42 @@ p {
   background: #ddd;
 }
 
+#output{
+  margin-top: 5em;
+  text-align: right;
+  display: grid;
+  width: min-content;
+  grid-column-gap: 1em;
+  grid-auto-rows: auto;
+  grid-template-areas: 
+  "input"
+  "label";
+  grid-template-columns: max-content max-content;
+}
+
 #cueSheetOutput{
   border-width: 2px;
   margin-top: 20px;
   display: none;
+}
+
+input{
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+label{
+  margin-top: 4px;
+}
+.newBtn{
+  margin-top: 40px;
+  width: 30px;
+  height: 30px;
+}
+
+h4{
+  margin-bottom: 5px;
+  margin-top: 50px;
 }
 
 .footer {
