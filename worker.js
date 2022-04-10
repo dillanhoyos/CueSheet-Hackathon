@@ -8,7 +8,10 @@ var edlJson = [];
 
 function disableCueSheetButton(){
   if (edlFile.files.length != 0 && audioFile.files.length != 0) createCueSheetButton.removeAttribute('disabled');
-  else createCueSheetButton.disabled = true;
+  else{
+    createCueSheetButton.disabled = true;
+    cueSheetOutput.style.display = "none";
+  }
 }
 
 edlFile.addEventListener('change', () => {
@@ -88,7 +91,7 @@ function parseEDL(edl){
       trackName = trackName[1].split('\n');
     }
     for(var i = 0; i < clips.length; i++){
-      var foundIndex = finalClips.map((o) => o.clipName).indexOf(clips[i].clipName);
+      var foundIndex = finalClips.map((o) => o.clipName).indexOf(clips[i].clipName.split('-')[0]);
       if(foundIndex == -1){
         finalClips.push(clips[i]);
         continue;
@@ -140,18 +143,14 @@ function createCueSheet(){
   try{
     if (edlJson.length == 0 || audioFilesJson.length == 0) throw 'one of your files failed';
     mergeEdlAndAudioJson();
-    fileSystem.writeFile("./newCueSheet.json", data, err => {
-      if (err) {
-        console.log("Error writing file", err)
-      } else {
-        
-      }
-    })
+    
     cueSheetOutput.value = JSON.stringify(audioFilesJson);
     cueSheetOutput.style.borderColor = "green";
+    cueSheetOutput.style.display = "block";
   }catch(e){
     cueSheetOutput.value = 'error: ' + e;
     cueSheetOutput.style.borderColor = "red";
+    cueSheetOutput.style.display = "block";
   }
 }
 
