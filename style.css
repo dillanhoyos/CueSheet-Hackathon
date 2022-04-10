@@ -70,3 +70,7 @@ p {
 .button:hover {
   background: #ddd;
 }
+
+#cueSheetOutput{
+  border-width: 2px;
+}

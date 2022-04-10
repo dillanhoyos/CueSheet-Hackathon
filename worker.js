@@ -35,6 +35,7 @@ audioFile.addEventListener('change', () => {
 function parseEDL(edl){
   const file = edl;
   let reader = new FileReader();
+  var finalClips = [];
 
   reader.onload = (e) =>{
       const file = e.target.result;
@@ -86,8 +87,6 @@ function parseEDL(edl){
       var trackName = trackStringList[i].split('\t');
       trackName = trackName[1].split('\n');
     }
-
-    var finalClips = [];
     for(var i = 0; i < clips.length; i++){
       var foundIndex = finalClips.map((o) => o.clipName).indexOf(clips[i].clipName);
       if(foundIndex == -1){
@@ -97,10 +96,11 @@ function parseEDL(edl){
       finalClips[foundIndex]['numberOfUses']++;
       finalClips[foundIndex]['duration'] += clips[i]['duration'];
     }
-    return finalClips;
+  
   };
   reader.onerror= (e) => alert(e.target.error.name);
   reader.readAsText(file);
+  return finalClips;
 }
 
 function parseAudioFile(files){
@@ -137,11 +137,25 @@ function parseAudioFile(files){
 }
 
 function createCueSheet(){
-  mergeEdlAndAudioJson();
-  console.log(audioFilesJson);
+  try{
+    if (edlJson.length == 0 || audioFilesJson.length == 0) throw 'one of your files failed';
+    mergeEdlAndAudioJson();
+    fileSystem.writeFile("./newCueSheet.json", data, err => {
+      if (err) {
+        console.log("Error writing file", err)
+      } else {
+        
+      }
+    })
+    cueSheetOutput.value = JSON.stringify(audioFilesJson);
+    cueSheetOutput.style.borderColor = "green";
+  }catch(e){
+    cueSheetOutput.value = 'error: ' + e;
+    cueSheetOutput.style.borderColor = "red";
+  }
 }
 
-function mergeEdlAndAudioJson(){
+async function mergeEdlAndAudioJson () {
   //iteration through audio files to find the edl entry and get duration and numOfUses
   for(var i = 0; i < audioFilesJson.length; i++){
     var foundIndex = edlJson.map((o) => o.clipName).indexOf(audioFilesJson[i]["workTitle"]);
