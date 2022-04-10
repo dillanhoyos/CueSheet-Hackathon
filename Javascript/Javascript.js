@@ -1,14 +1,5 @@
 
 
-const EditDecisionList = require('edl-genius');
-
-let e = new EditDecisionList(29.97, 'cmx3600');
-edl.readFile('/Users/dillannhoyos/Documents/CueSheet-Hackathon/Javascript/herer.txt')
-  .then((edl) => {
-    console.log(edl.events);
-  })
-
-
 
 let input = document.querySelector('input');
 
@@ -35,7 +26,6 @@ input.addEventListener('change', () => {
 
     reader.readAsText(file);
 })
-
 
 
 
