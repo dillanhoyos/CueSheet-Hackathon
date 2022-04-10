@@ -68,29 +68,13 @@
         <input type="text" id="seasonNumber">
         
         <h4>alternative work titles</h4>
-        <button class="newBtn" aria-label="new alternative work title" onclick="">
-            <span class="newBtnIcon">+</span>
+        <button class="newBtn" type="button" id="addAlternativeWorkTitles" onclick="makeNewAlternativeWork()" aria-label="new alternative work title">
+            <span span class="newBtnIcon">+</span>
         </button>
-        <label for="avTitle-avWorkTitle">work title</label>
-        <input type="text" id="avTitle-avWorkTitle">
-        <label for="avTitles-langugageCode">language code</label>
-        <input type="text" id="avTitles-langugageCode">
+        <div class="allAltWorkTitles"></div><br>
 
         <h4>work cues</h4><br>
-        <label for="avCues-vworkTitle">work title</label>
-        <input type="text" id="avCues-vworkTitle">
-        <label for="avCues-iswc">iswc</label>
-        <input type="text" id="avCues-iswc">
-        <label for="avCues-instrumental">instrumental</label>
-        <input type="text" id="avCues-instrumental">
-        <label for="avCues-cueUsageCode">cue usage code</label>
-        <input type="text" id="avCues-cueUsageCode">
-        <label for="avCues-duration">duration</label>
-        <input type="text" id="avCues-duration">
-        <label for="avCues-sequenceNumber">sequence number</label>
-        <input type="text" id="avCues-sequenceNumber">
-        <label for="avCues-numberOfUses">number of uses</label>
-        <input type="text" id="avCues-numberOfUses">
+        <div class="allCues"></div><br>
         
         <h4>cue ips</h4><br>
         <label for="avCues-cueIps-ipName">ip name</label>
@@ -101,6 +85,7 @@
         <input type="text" id="avCues-cueIps-ipiNameNumber">
         <label for="avCues-cueIps-ipFunction">ip function</label>
         <input type="text" id="avCues-cueIps-ipFunction">
+        <div></div>
 
         <button disabled id="createCueSheetButton" onclick="createCueSheet()">Submit to Socan</button>
     </form>
