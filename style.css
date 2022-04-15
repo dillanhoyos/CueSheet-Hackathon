@@ -143,13 +143,13 @@ p {
 }
 
 #output{
+  width: 100%;
   margin-top: 5em;
   text-align: right;
   display: grid;
-  width: min-content;
+  justify-content: center;
   grid-column-gap: 1em;
-  grid-auto-rows: auto;
-  grid-template-areas: 
+  grid-template-areas:
   "input"
   "label";
   grid-template-columns: max-content max-content;
@@ -157,6 +157,7 @@ p {
 }
 
 #cueSheetOutput{
+  width: 400px;
   border-width: 2px;
   margin-top: 20px;
 }
@@ -164,6 +165,7 @@ p {
 input{
   margin-bottom: 20px;
   padding: 5px;
+  width: 300px;
 }
 
 label{

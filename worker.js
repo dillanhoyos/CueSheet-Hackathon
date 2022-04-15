@@ -147,7 +147,7 @@ function createCueSheet(){
     mergeEdlAndAudioJson();
     cueSheetOutput.value = JSON.stringify(audioFilesJson);
     cueSheetOutput.style.borderColor = "green";
-    outputForm.style.display = "block";
+    outputForm.style.display = "grid";
   }catch(e){
     alert('Error: ' + e);
   }
